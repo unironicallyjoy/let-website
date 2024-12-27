@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>LETNeu</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">LETNEU</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#research" class="nav__link">Research</a>
+            </li>
+            <li class="nav__item">
+              <a href="#publications" class="nav__link">Publications</a>
+            </li>
+          </ul>
+
+          <div class="nav__dark">
+            <!-- Theme change button -->
+            <span class="change-theme-name">Dark mode</span>
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+          </div>
+
+          <i class="ri-close-line nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-function-line"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home" id="home">
+        <img src="assets/img/banner.png" alt="" class="home__img" />
+
+        <div class="home__container container grid">
+          <div class="home__data">
+            <span class="home__data-subtitle">Welcome to the</span>
+            <h1 class="home__data-title">
+              Laboratory for <br />
+              Experimental and <br />
+              Translational <br />
+              Neurobiology
+            </h1>
+            <a href="#place" class="button">Explore</a>
+          </div>
+
+          <div class="home__social">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="ri-facebook-box-fill"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="ri-instagram-fill"></i>
+            </a>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="ri-twitter-fill"></i>
+            </a>
+          </div>
+
+          <div class="home__info">
+            <div>
+              <a
+                href="#contact"
+                class="button button--flex button--link home__info-button"
+              >
+                Join our incredible team <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+
+            <div class="home__info-overlay">
+              <!-- <img src="assets/img/montage.png" alt="" class="home__info-img" /> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <div class="about__data">
+            <h2 class="section__title about__title">
+              More Information <br />
+              About Our Research
+            </h2>
+            <p class="about__description">
+              Our research aims to understand how the brain is affected by an
+              interplay of genetic and environmental factors that trigger
+              neuronal perturbations and/or neuronal death at critical stages of
+              development and across the lifespan. Specifically, we focus on the
+              role of metals as environmental toxicants interacting with genetic
+              mutations in the pathogenesis of brain disorders including autism,
+              Parkinson’s, and Alzheimer’s. Our research investigates how these
+              factors influence pathophysiological pathways such as
+              neuro-inflammatory, oxidative redox imbalance, and mitochondrial
+              dysfunctions. Furthermore, given the emerging evidence of gut
+              microbiome in various neurological disorders, our lab also
+              investigates the multifactorial interactions of the environment,
+              genes, and gut microbiome in brain diseases. Understanding these
+              complex interactions could be key to identifying better disease
+              biomarkers and new drug targets and developing multifactorial
+              therapeutic interventions. Our research leverages various
+              experimental models particularly rodents and the innovative C.
+              elegans via a combination of multiple approaches that include
+              behavioural phenotypic studies, microscopic imaging, immunoassays,
+              spectrophotometric and spectrometric analysis, gene expression,
+              and transcriptomics analysis.
+            </p>
+            <a href="#contact" class="button">Want to Collaborate?</a>
+          </div>
+
+          <div class="about__img">
+            <div class="about__img-overlay">
+              <!-- <img src="assets/img/crawl.mov" alt="" class="about__img-one" /> -->
+              <video width="500" height="300" autoplay class="video">
+                <source src="/assets/img/crawl.mov" type="video/mp4" />
+                <!-- <source rc="/assets/img/crawl.mov"  type="video/mov" /> -->
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PLACES ====================-->
+      <section class="place section" id="research">
+        <h2 class="section__title">Current research themes</h2>
+
+        <div class="place__container container grid">
+          <!--==================== PLACES CARD 1 ====================-->
+          <div class="place__card">
+            <img src="assets/img/blank.png" alt="" class="place__img" />
+
+            <div class="place__content">
+              <span class="place__rating">
+                <span class="place__rating-number"><h2>01</h2></span>
+              </span>
+
+              <div class="place__data">
+                <h3 class="place__title"></h3>
+                <span class="place__subtitle"></span>
+                <span class="place__price"
+                  ><h4>
+                    Understanding gene-environment interactions between
+                    mutations in autism risks genes and neurodevelopmental
+                    sequelae of metals exposures
+                  </h4></span
+                >
+              </div>
+            </div>
+
+            <button class="button button--flex place__button">
+              <!-- <i class="ri-arrow-right-line"></i> -->
+            </button>
+          </div>
+
+          <!--==================== PLACES CARD 2 ====================-->
+          <div class="place__card">
+            <img src="assets/img/blank.png" alt="" class="place__img" />
+
+            <div class="place__content">
+              <span class="place__rating">
+                <!-- <i class="ri-star-line place__rating-icon"></i> -->
+                <span class="place__rating-number"><h2>02</h2></span>
+              </span>
+
+              <div class="place__data">
+                <h3 class="place__title"></h3>
+                <span class="place__subtitle"></span>
+                <span class="place__price"
+                  ><h4>
+                    Elucidating multifactorial interactions of gut microbiome,
+                    genes, and environment in neurodegenerative diseases
+                  </h4></span
+                >
+              </div>
+            </div>
+
+            <button class="button button--flex place__button">
+              <!-- <i class="ri-arrow-right-line"></i> -->
+            </button>
+          </div>
+
+          <!--==================== PLACES CARD 3 ====================-->
+          <div class="place__card">
+            <img src="assets/img/blank.png" alt="" class="place__img" />
+
+            <div class="place__content">
+              <span class="place__rating">
+                <!-- <i class="ri-star-line place__rating-icon"></i> -->
+                <span class="place__rating-number"><h2>03</h2></span>
+              </span>
+
+              <div class="place__data">
+                <h3 class="place__title"></h3>
+                <span class="place__subtitle"></span>
+                <span class="place__price"
+                  ><h4>
+                    Unravelling the role of iron overload on the
+                    neurexin-neuroligin complex – Implication for autism
+                    spectrum disorder
+                  </h4></span
+                >
+              </div>
+            </div>
+
+            <button class="button button--flex place__button">
+              <!-- <i class="ri-arrow-right-line"></i> -->
+            </button>
+          </div>
+
+          <!--==================== PLACES CARD 4 ====================-->
+          <div class="place__card">
+            <img src="assets/img/blank.png" alt="" class="place__img" />
+
+            <div class="place__content">
+              <span class="place__rating">
+                <!-- <i class="ri-star-line place__rating-icon"></i> -->
+                <span class="place__rating-number"><h2>04</h2></span>
+              </span>
+
+              <div class="place__data">
+                <h3 class="place__title"></h3>
+                <span class="place__subtitle"></span>
+                <span class="place__price"
+                  ><h4>
+                    Investigating Synaptic Dynamics in Methylmercury
+                    Neurotoxicity: Potential Involvement of Sexual Dimorphic
+                    Patterns
+                  </h4></span
+                >
+              </div>
+            </div>
+
+            <button class="button button--flex place__button">
+              <!-- <i class="ri-arrow-right-line"></i> -->
+            </button>
+          </div>
+
+          <!--==================== PLACES CARD 5 ====================-->
+          <div class="place__card">
+            <img src="assets/img/blank.png" alt="" class="place__img" />
+
+            <div class="place__content">
+              <span class="place__rating">
+                <!-- <i class="ri-star-line place__rating-icon"></i> -->
+                <span class="place__rating-number"><h2>05</h2></span>
+              </span>
+
+              <div class="place__data">
+                <h3 class="place__title"></h3>
+                <span class="place__subtitle"></span>
+                <span class="place__price"
+                  ><h4>
+                    Understanding the impact of chronic stress and environmental
+                    factors events on mental health.
+                  </h4></span
+                >
+              </div>
+            </div>
+
+            <button class="button button--flex place__button">
+              <!-- <i class="ri-arrow-right-line"></i> -->
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== DISCOVER ====================-->
+      <section class="discover section" id="publications">
+        <h2 class="section__title">
+          Selected publications
+        </h2>
+
+        <div class="discover__container container swiper-container">
+          <div class="swiper-wrapper">
+            <!--==================== DISCOVER 1 ====================-->
+            <div class="discover__card swiper-slide">
+              <img src="assets/img/pub1.png" alt="" class="discover__img" />
+              <div class="discover__data">
+                <h2 class="discover__title">01</h2>
+                <span class="discover__description"
+                  >Understanding gene-environment interactions between mutations
+                  in autism risks genes and neurodevelopmental sequelae of
+                  metals exposures</span
+                >
+              </div>
+            </div>
+
+            <!--==================== DISCOVER 2 ====================-->
+            <div class="discover__card swiper-slide">
+              <img src="assets/img/pub2.png" alt="" class="discover__img" />
+              <div class="discover__data">
+                <h2 class="discover__title">02</h2>
+                <span class="discover__description"
+                  >Elucidating multifactorial interactions of gut microbiome,
+                  genes, and environment in neurodegenerative diseases</span
+                >
+              </div>
+            </div>
+
+            <!--==================== DISCOVER 3 ====================-->
+            <div class="discover__card swiper-slide">
+              <img src="assets/img/pub3.png" alt="" class="discover__img" />
+              <div class="discover__data">
+                <h2 class="discover__title">03</h2>
+                <span class="discover__description"
+                  >Unravelling the role of iron overload on the
+                  neurexin-neuroligin complex – Implication for autism spectrum
+                  disorder</span
+                >
+              </div>
+            </div>
+
+            <!--==================== DISCOVER 4 ====================-->
+            <div class="discover__card swiper-slide">
+              <img src="assets/img/pub4.png" alt="" class="discover__img" />
+              <div class="discover__data">
+                <h2 class="discover__title">04</h2>
+                <span class="discover__description"
+                  >Investigating Synaptic Dynamics in Methylmercury
+                  Neurotoxicity: Potential Involvement of Sexual Dimorphic
+                  Patterns</span
+                >
+              </div>
+            </div>
+
+            <!--==================== DISCOVER 5 ====================-->
+            <div class="discover__card swiper-slide">
+              <img src="assets/img/pub5.png" alt="" class="discover__img" />
+              <div class="discover__data">
+                <h2 class="discover__title">05</h2>
+                <span class="discover__description"
+                  >Understanding the impact of chronic stress and environmental
+                  factors events on mental health</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!--==================== SPONSORS ====================-->
+      <section class="sponsor section">
+        <div class="sponsors">
+            <div class="top">
+                <div class="sponsor">
+                    <img src="/assets/img/sponsors1.png" alt="" sizes="" srcset="">
+                </div>
+                <div class="sponsor">
+                    <img src="/assets/img/sponsors2.png" alt="" sizes="" srcset="">
+                </div>
+                <div class="sponsor">
+                    <img src="/assets/img/sponsors3.png" alt="" sizes="" srcset="">
+                </div>
+                <div class="sponsor">
+                    <img src="/assets/img/sponsors4.png" alt="" sizes="" srcset="">
+                </div>
+                <div class="sponsor">
+                    <img src="/assets/img/sponsors5.png" alt="" sizes="" srcset="">
+                </div>
+                <div class="sponsor">
+                    <img src="/assets/img/sponsors6.png" alt="" sizes="" srcset="">
+                </div>
+                <div class="sponsor">
+                    <img src="/assets/img/sponsors7.png" alt="" sizes="" srcset="">
+                </div>
+            </div>
+            <div class="bottom">
+                
+            </div>
+        </div>
+      </section>
+    </main>
+
+
+
+      <!--==================== SUBSCRIBE ====================-->
+      <section class="subscribe section" id="contact">
+        <div class="subscribe__bg">
+          <div class="subscribe__container container">
+            <h2 class="section__title subscribe__title">Join Us</h2>
+            <p class="subscribe__description">
+              We equally provide training to graduate students, early-career
+              researchers, and established investigators from other institutions
+              to gain advanced skills including immunohistochemistry and
+              immunofluorescence, microscopy and imaging analysis, biomedical
+              visualizations, and basic handling of the C. elegans model as a
+              way of advancing neuroscience research and training in the region.
+            </p>
+
+            <div class="home__social contact-info">
+                          <a
+                href="mailto:iroegbujd@gmail.com"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-mail-send-line"></i>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/company/laboratory-for-experimental-and-translational-neurobiology-letneu/"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-linkedin-line"></i>
+              </a>
+              <a
+                href="https://www.researchgate.net/lab/LETNeu-UNIMED-Omamuyovwi-Meashack-Ijomone"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-flask-line"></i>
+              </a>
+              <a
+                href="https://x.com/godmamusprime?s=09"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-twitter-fill"></i>
+              </a>
+
+
+              <h5>
+                Visit us at:<br />
+                Department of Anatomy<br />
+                University of Medical Sciences, Ondo<br />
+                Nigeria
+              </h5>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content grid">
+          
+        </div>
+
+        <div class="footer__rights">
+          <p class="footer__copy">
+            <h5>&#169; 2024 LETNeu. All rights reserved.</h5>
+          </p>
+          <div class="footer__terms">
+            <a href="#" class="footer__terms-link"></a>
+            <a href="#" class="footer__terms-link"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line scrollup__icon"></i>
+    </a>
+
+    <!--=============== SCROLL REVEAL===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
